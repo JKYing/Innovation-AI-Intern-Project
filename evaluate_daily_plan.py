@@ -51,7 +51,7 @@ def main():
             ious.append(best)
         tasks=sum(1 for p in rec["plan"] if p["type"]=="task")
         print(f"{day}: EventOverlap={sum(ious)/len(ious):.3f} | TasksScheduled={tasks}")
-    print("✅ Done.")
+    print(" Done.")
 
 if __name__=="__main__":
     main()
