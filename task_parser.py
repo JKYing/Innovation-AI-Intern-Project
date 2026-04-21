@@ -134,7 +134,7 @@ def main():
             }
             w.write(json.dumps(rec, ensure_ascii=False) + "\n")
             n += 1
-    print(f"✅ Wrote {n} lines -> {out_path}")
+    print(f"Wrote {n} lines -> {out_path}")
 
 if __name__ == "__main__":
     main()
