@@ -16,7 +16,7 @@ DATA_DIR.mkdir(exist_ok=True)
 def save_json(obj, path: Path):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2, default=str)  # ← 加上 default=str
-    print(f"✅ Saved -> {path} ({len(obj) if isinstance(obj, list) else 'object'})")
+    print(f"Saved -> {path} ({len(obj) if isinstance(obj, list) else 'object'})")
 
 
 # ---------------- Google: Gmail ----------------
